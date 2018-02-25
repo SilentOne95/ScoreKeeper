@@ -1,4 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <dimen name="zero">0dp</dimen>
+
+    <!-- Header -->
+    <dimen name="logo_size">120dp</dimen>
+    <dimen name="logo_padding">15dp</dimen>
+
+    <!-- Body -->
 
 </resources>

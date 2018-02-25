@@ -4,6 +4,43 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.android.scorekeeper.MainActivity">
+    tools:context="com.example.android.scorekeeper.MainActivity"
+    android:background="@drawable/background">
+
+    <!-- Header with logos -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="@dimen/zero"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/liverpool_logo"
+                android:src="@drawable/liverpool_logo"
+                style="@style/logo"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="@dimen/zero"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/manchester_logo"
+                android:src="@drawable/manchester_city_logo"
+                style="logo"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!-- Body -->
 
 </ScrollView>
