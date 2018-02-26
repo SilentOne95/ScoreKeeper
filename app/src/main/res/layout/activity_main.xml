@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.example.android.scorekeeper.MainActivity"
-    android:background="@drawable/background">
+    android:background="@drawable/background2">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -39,7 +39,8 @@
                         <Button
                             android:id="@+id/add_goal_liverpool"
                             android:text="@string/goal"
-                            style="@style/buttonLeftColumn"/>
+                            style="@style/buttonLeftColumn"
+                            android:onClick="addGoalLiverpool"/>
 
                         <TextView
                             android:id="@+id/show_score_liverpool"
@@ -61,7 +62,8 @@
                         <Button
                             android:id="@+id/add_yellow_liverpool"
                             android:text="@string/yellow_card"
-                            style="@style/buttonLeftColumn"/>
+                            style="@style/buttonLeftColumn"
+                            android:onClick="addYellowLiverpool"/>
 
                         <TextView
                             android:id="@+id/show_yellow_liverpool"
@@ -83,7 +85,8 @@
                         <Button
                             android:id="@+id/add_red_liverpool"
                             android:text="@string/red_card"
-                            style="@style/buttonLeftColumn"/>
+                            style="@style/buttonLeftColumn"
+                            android:onClick="addRedLiverpool"/>
 
                         <TextView
                             android:id="@+id/show_red_liverpool"
@@ -124,7 +127,8 @@
                         <Button
                             android:id="@+id/add_goal_manchester"
                             android:text="@string/goal"
-                            style="@style/buttonRightColumn"/>
+                            style="@style/buttonRightColumn"
+                            android:onClick="addGoalManchester"/>
 
                     </RelativeLayout>
 
@@ -146,7 +150,8 @@
                         <Button
                             android:id="@+id/add_yellow_manchester"
                             android:text="@string/yellow_card"
-                            style="@style/buttonRightColumn"/>
+                            style="@style/buttonRightColumn"
+                            android:onClick="addYellowManchester"/>
 
                     </RelativeLayout>
 
@@ -168,7 +173,8 @@
                         <Button
                             android:id="@+id/add_red_manchester"
                             android:text="@string/red_card"
-                            style="@style/buttonRightColumn"/>
+                            style="@style/buttonRightColumn"
+                            android:onClick="addRedManchester"/>
 
                     </RelativeLayout>
 
@@ -179,8 +185,9 @@
         </LinearLayout>
 
         <Button
-            android:text="Reset"
-            style="@style/resetButton" />
+            android:text="@string/reset"
+            style="@style/resetButton"
+            android:onClick="resetScore"/>
 
     </LinearLayout>
 
