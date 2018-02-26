@@ -7,7 +7,6 @@
     tools:context="com.example.android.scorekeeper.MainActivity"
     android:background="@drawable/background">
 
-    <!-- Header with logos -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -24,6 +23,24 @@
                 android:src="@drawable/liverpool_logo"
                 style="@style/logo"/>
 
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="20dp"
+                android:paddingBottom="20dp">
+
+                <Button
+                    android:id="@+id/add_goal_liverpool"
+                    android:text="@string/goal"
+                    style="@style/buttonLeftColumn"/>
+
+                <TextView
+                    android:id="@+id/show_score_liverpool"
+                    android:text="@string/initial_value"
+                    style="@style/textViewLeftColumn"/>
+
+            </RelativeLayout>
+
         </LinearLayout>
 
         <LinearLayout
@@ -35,12 +52,29 @@
             <ImageView
                 android:id="@+id/manchester_logo"
                 android:src="@drawable/manchester_city_logo"
-                style="logo"/>
+                style="@style/logo"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingTop="20dp"
+                android:paddingBottom="20dp">
+
+                <TextView
+                    android:id="@+id/show_score_manchester"
+                    android:text="@string/initial_value"
+                    style="@style/textViewRightColumn"/>
+
+                <Button
+                    android:id="@+id/add_goal_manchester"
+                    android:text="@string/goal"
+                    style="@style/buttonRightColumn"/>
+
+            </RelativeLayout>
 
         </LinearLayout>
 
     </LinearLayout>
-
-    <!-- Body -->
 
 </ScrollView>
