@@ -10,70 +10,177 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:orientation="vertical">
 
         <LinearLayout
-            android:layout_width="@dimen/zero"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:orientation="vertical">
+            android:orientation="horizontal">
 
-            <ImageView
-                android:id="@+id/liverpool_logo"
-                android:src="@drawable/liverpool_logo"
-                style="@style/logo"/>
-
-            <RelativeLayout
-                android:layout_width="match_parent"
+            <LinearLayout
+                android:layout_width="@dimen/zero"
                 android:layout_height="wrap_content"
-                android:paddingTop="20dp"
-                android:paddingBottom="20dp">
+                android:layout_weight="1"
+                android:orientation="vertical">
 
-                <Button
-                    android:id="@+id/add_goal_liverpool"
-                    android:text="@string/goal"
-                    style="@style/buttonLeftColumn"/>
+                <ImageView
+                    android:id="@+id/liverpool_logo"
+                    android:src="@drawable/liverpool_logo"
+                    style="@style/logo"/>
 
-                <TextView
-                    android:id="@+id/show_score_liverpool"
-                    android:text="@string/initial_value"
-                    style="@style/textViewLeftColumn"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
 
-            </RelativeLayout>
+                    <RelativeLayout
+                        style="@style/layoutRows">
+
+                        <Button
+                            android:id="@+id/add_goal_liverpool"
+                            android:text="@string/goal"
+                            style="@style/buttonLeftColumn"/>
+
+                        <TextView
+                            android:id="@+id/show_score_liverpool"
+                            android:text="@string/initial_value"
+                            style="@style/textViewLeftColumn"/>
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        style="@style/layoutRows">
+
+                        <Button
+                            android:id="@+id/add_yellow_liverpool"
+                            android:text="@string/yellow_card"
+                            style="@style/buttonLeftColumn"/>
+
+                        <TextView
+                            android:id="@+id/show_yellow_liverpool"
+                            android:text="@string/initial_value"
+                            style="@style/textViewLeftColumn"/>
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        style="@style/layoutRows">
+
+                        <Button
+                            android:id="@+id/add_red_liverpool"
+                            android:text="@string/red_card"
+                            style="@style/buttonLeftColumn"/>
+
+                        <TextView
+                            android:id="@+id/show_red_liverpool"
+                            android:text="@string/initial_value"
+                            style="@style/textViewLeftColumn"/>
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="@dimen/zero"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/manchester_logo"
+                    android:src="@drawable/manchester_city_logo"
+                    style="@style/logo"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:id="@+id/add_goal_row"
+                        style="@style/layoutRows">
+
+                        <TextView
+                            android:id="@+id/show_score_manchester"
+                            android:text="@string/initial_value"
+                            style="@style/textViewRightColumn"/>
+
+                        <Button
+                            android:id="@+id/add_goal_manchester"
+                            android:text="@string/goal"
+                            style="@style/buttonRightColumn"/>
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        style="@style/layoutRows">
+
+                        <TextView
+                            android:id="@+id/show_yellow_manchester"
+                            android:text="@string/initial_value"
+                            style="@style/textViewRightColumn"/>
+
+                        <Button
+                            android:id="@+id/add_yellow_manchester"
+                            android:text="@string/yellow_card"
+                            style="@style/buttonRightColumn"/>
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        style="@style/layoutRows">
+
+                        <TextView
+                            android:id="@+id/show_red_manchester"
+                            android:text="@string/initial_value"
+                            style="@style/textViewRightColumn"/>
+
+                        <Button
+                            android:id="@+id/add_red_manchester"
+                            android:text="@string/red_card"
+                            style="@style/buttonRightColumn"/>
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
 
         </LinearLayout>
 
-        <LinearLayout
-            android:layout_width="@dimen/zero"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:orientation="vertical">
-
-            <ImageView
-                android:id="@+id/manchester_logo"
-                android:src="@drawable/manchester_city_logo"
-                style="@style/logo"/>
-
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:paddingTop="20dp"
-                android:paddingBottom="20dp">
-
-                <TextView
-                    android:id="@+id/show_score_manchester"
-                    android:text="@string/initial_value"
-                    style="@style/textViewRightColumn"/>
-
-                <Button
-                    android:id="@+id/add_goal_manchester"
-                    android:text="@string/goal"
-                    style="@style/buttonRightColumn"/>
-
-            </RelativeLayout>
-
-        </LinearLayout>
+        <Button
+            android:text="Reset"
+            style="@style/resetButton" />
 
     </LinearLayout>
 
